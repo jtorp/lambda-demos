@@ -3,7 +3,7 @@
 ## Purpose
 
 Scripts automate the setup of Lambda Layer zip files for Node.js runtime. 
-1. **Creating a Node.js project** with dependencies and preparing the directory structure for Lambda layers.
+1. **Creating a Node.js project ** with dependencies and preparing the directory structure for Lambda layers.
 2. **Creating a Lambda layer zip file** by copying the `node_modules` from your existing project and zipping them into the required structure for AWS Lambda.
 
 ### Prerequsits
@@ -13,10 +13,9 @@ _AWS Lambda currently supports Node.js 18.x, 20.x, and 22.x runtimes._
 - You have **zip** installed (for creating the zip files).
 ### Scripts Overview
 
-1. **`setup-script.sh`**: Initializes a new Node.js project, installs the specified dependencies.
-2. **`prepare-layer.sh`**: Copies `node_modules` directory from your project, structures it for Lambda, and zips it for use in AWS Lambda.
+**`setup-script.sh`**: Initializes a new Node.js project, installs the specified dependencies.
 
-
+**`prepare-layer.sh`**: Copies installed `node_modules` directory from the project, structures it for Lambda, and zips it for use in AWS Lambda Layers.
 
 ### Usage:
 __Make the scripts executable:__
@@ -56,4 +55,4 @@ nodejs/
         ...etc
 ```
 
-The zip file can then be uploaded to AWS Lambda as a layer.# lambda-demos
+The zip file can then be uploaded to AWS Lambda as a custom layer zip.
