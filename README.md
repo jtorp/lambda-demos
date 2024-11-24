@@ -1,9 +1,9 @@
-# Lambda Layer Setup Scritps
+# Lambda Layer Node Setup Scritps
 
 ## Purpose
 
 Scripts automate the setup of Lambda Layer zip files for Node.js runtime. 
-1. **Creating a Node.js project ** with dependencies and preparing the directory structure for Lambda layers.
+1. **Creating a Node.js project** with dependencies and preparing the directory structure for Lambda layers.
 2. **Creating a Lambda layer zip file** by copying the `node_modules` from your existing project and zipping them into the required structure for AWS Lambda.
 
 ### Prerequsits
